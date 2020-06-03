@@ -54,6 +54,37 @@ Fields that are declared but not initialized will be set to 0 or null. <br>
 Local variables are not initialized by the compiler, you have to set them. <br>
 
 ### Literals
+You can use literals to assign values directly to your primitives:
 
+```
+boolean result = true;
+char capitalC = 'C';
+byte b = 100;
+short s = 10000;
+int i = 100000;
+```
+
+#### Integer literals
+An integer literal is of type long if it ends with l or L.
+
+Integer literals can be expressed with these systems:
+- Decimal: base 10.
+- Hexa: base 16. 0x
+- Binary: base 2. 0b
+
+#### Floating point literal
+A floating point literal is of type float if it ends with f or F. Otherwise it is <br>
+of type double. 
+
+#### Character and string literals
+Character or string literals may contain any Unicode (UTF-16) character. <br>
+Always use single quote for char and double quote for string. 
+
+There's also a `null` literal. You can't assign it to primitives. You can do very little <br>
+with it, and it is used mostly to indicate that some object is unavailable.
+
+Finally, there's a special type of literal called class literal, formed by taking a type name <br> 
+and appending a .class to it. <br>
+For example, `String.class`. This refers to the object that represents the class itself.
 
 
