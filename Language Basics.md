@@ -131,4 +131,30 @@ This makes it possible that each array will vary in length.
 #### Manipulating arrays
 The java.util.Arrays class provides a set of methods to manipulate arrays.
 
+# Operators
 
+#### The type comparison operator _instanceof_ <br>
+
+The operator instanceof allows you to test if an object is of a class type, <br>
+or a class that derives from a certain class, or implements a certain interface. <br>
+
+The following program defines a class Parent, an interface MyInterface, <br>
+and a class the implements the interface and inherits the superclass. <br>
+
+```
+class Parent { }
+interface MyInterface { }
+
+class child extends parent implements MyInterface { }
+
+class Program {
+  public static void main(String[] args)  {
+    Child child = new Child();
+    
+    System.out.println(child instanceof Parent) // true
+    
+    System.out.println(child instanceof MyInterace) // true
+  }
+
+
+}
